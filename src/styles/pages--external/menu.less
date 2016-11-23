@@ -1,0 +1,52 @@
+.cg-menu{
+  width: 100%;
+  ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    &:after, &:before{
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  li{
+    a{
+      display: block;
+      float: left;
+      font-size: 18px;
+      width: 100%/8;
+      background-color: @blue-light;
+      color: white;
+      text-decoration: none;
+      padding-left: 13px;
+      padding-right: 13px;
+      padding-top: 20px;
+      height: 130px;
+      box-sizing: border-box;
+      transition: all 500ms;
+      line-height: 1.2;
+      &:hover{
+        background-color: @blue-light-hover;
+      }
+    }
+    &:nth-child(odd) a{
+      background-color: @blue-dark;
+      &:hover{
+        background-color: @blue-dark-hover;
+      }
+    }
+    &:nth-child(2n+9) a{
+      background-color: @blue-light;
+      &:hover{
+        background-color: @blue-light-hover;
+      }
+    }
+    &:nth-child(2n+10) a{
+      background-color: @blue-dark;
+      &:hover{
+        background-color: @blue-dark-hover;
+      }
+    }
+  }
+}

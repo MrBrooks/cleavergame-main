@@ -1,0 +1,25 @@
+.cg-btn{
+  appearance: none;
+  box-shadow: none;
+  outline: none;
+  background-color: @blue-light;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0;
+  line-height: 1;
+  padding: 15px 25px;
+  cursor: pointer;
+  &:active,&:focus{
+    box-shadow: none;
+    outline: none;
+  }
+  &:hover{
+    background-color: @blue-dark;
+    text-decoration: none;
+  }
+  a:hover>&{
+    text-decoration: none;
+  }
+}
