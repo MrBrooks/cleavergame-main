@@ -270,75 +270,6 @@
 {
     background-image: url('../img/sprites/svg/svg-sprite.png');
 }
-.cg-menu
-{
-    width: 100%;
-}
-.cg-menu ul
-{
-    margin: auto;
-    padding: 0;
-
-    list-style-type: none;
-}
-.cg-menu ul:after,
-.cg-menu ul:before
-{
-    display: block;
-    clear: both;
-
-    content: '';
-}
-.cg-menu li a
-{
-    font-size: 18px;
-    line-height: 1.2;
-
-    display: block;
-    float: left;
-
-    box-sizing: border-box;
-    width: 12.5%;
-    height: 130px;
-    padding-top: 20px;
-    padding-right: 13px;
-    padding-left: 13px;
-
-    -webkit-transition: all 500ms;
-            transition: all 500ms;
-    text-decoration: none;
-
-    color: white;
-    background-color: #00afd4;
-}
-.cg-menu li a:hover
-{
-    background-color: #018ba8;
-}
-.cg-menu li:nth-child(odd) a
-{
-    background-color: #009ebf;
-}
-.cg-menu li:nth-child(odd) a:hover
-{
-    background-color: #0286a2;
-}
-.cg-menu li:nth-child(2n+9) a
-{
-    background-color: #00afd4;
-}
-.cg-menu li:nth-child(2n+9) a:hover
-{
-    background-color: #018ba8;
-}
-.cg-menu li:nth-child(2n+10) a
-{
-    background-color: #009ebf;
-}
-.cg-menu li:nth-child(2n+10) a:hover
-{
-    background-color: #0286a2;
-}
 .cg-comments
 {
     width: 100%;
@@ -482,7 +413,8 @@
 {
     width: 100%;
 }
-.cg-btn
+.cg-btn,
+.cg-menu-btn
 {
     font-size: 18px;
     font-weight: 700;
@@ -491,6 +423,8 @@
     padding: 15px 25px;
 
     cursor: pointer;
+    -webkit-transition: all 500ms;
+            transition: all 500ms;
     text-transform: uppercase;
 
     color: white;
@@ -518,6 +452,14 @@
 a:hover > .cg-btn
 {
     text-decoration: none;
+}
+.cg-btn--red
+{
+    background-color: #ee2459;
+}
+.cg-btn--red:hover
+{
+    background-color: #d20045;
 }
 .cg-simple-page img
 {
@@ -616,4 +558,144 @@ a:hover > .cg-btn
 .cg-person-card__position
 {
     margin-bottom: 25px;
+}
+.cg-menu
+{
+    display: none;
+
+    width: 100%;
+}
+.cg-menu--opened
+{
+    display: block;
+}
+.cg-menu ul
+{
+    margin: auto;
+    padding: 0;
+
+    list-style-type: none;
+}
+.cg-menu ul:after,
+.cg-menu ul:before
+{
+    display: block;
+    clear: both;
+
+    content: '';
+}
+.cg-menu li a
+{
+    font-size: 18px;
+    line-height: 1.2;
+
+    display: block;
+    float: left;
+
+    box-sizing: border-box;
+    width: 12.5%;
+    height: 130px;
+    padding-top: 20px;
+    padding-right: 13px;
+    padding-left: 13px;
+
+    -webkit-transition: all 500ms;
+            transition: all 500ms;
+    text-decoration: none;
+
+    color: white;
+    background-color: #00afd4;
+}
+.cg-menu li a:hover
+{
+    background-color: #018ba8;
+}
+.cg-menu li:nth-child(odd) a
+{
+    background-color: #009ebf;
+}
+.cg-menu li:nth-child(odd) a:hover
+{
+    background-color: #0286a2;
+}
+.cg-menu li:nth-child(2n+9) a
+{
+    background-color: #00afd4;
+}
+.cg-menu li:nth-child(2n+9) a:hover
+{
+    background-color: #018ba8;
+}
+.cg-menu li:nth-child(2n+10) a
+{
+    background-color: #009ebf;
+}
+.cg-menu li:nth-child(2n+10) a:hover
+{
+    background-color: #0286a2;
+}
+.cg-menu .cg-btn
+{
+    width: 100%;
+}
+.cg-menu-btn
+{
+    display: inline-block;
+    float: left;
+
+    padding: 17px 12px;
+}
+.cg-menu-btn__bars
+{
+    float: left;
+
+    margin-right: 15px;
+
+    vertical-align: middle;
+}
+.cg-menu-btn__bars div
+{
+    width: 24px;
+    height: 3px;
+    margin-bottom: 5px;
+
+    -webkit-transition: all 500ms;
+            transition: all 500ms;
+
+    background-color: #fff;
+}
+.cg-menu-btn__bars div:last-child
+{
+    margin: 0;
+}
+.cg-menu-btn.active .cg-menu-btn__bars div:nth-child(1)
+{
+    -webkit-transform: rotate(45deg) translateY(11px);
+        -ms-transform: rotate(45deg) translateY(11px);
+            transform: rotate(45deg) translateY(11px);
+}
+.cg-menu-btn.active .cg-menu-btn__bars div:nth-child(2)
+{
+    -webkit-transform: translateX(-24px);
+        -ms-transform: translateX(-24px);
+            transform: translateX(-24px);
+
+    opacity: 0;
+}
+.cg-menu-btn.active .cg-menu-btn__bars div:nth-child(3)
+{
+    -webkit-transform: rotate(-45deg) translateY(-11px);
+        -ms-transform: rotate(-45deg) translateY(-11px);
+            transform: rotate(-45deg) translateY(-11px);
+}
+.cg-menu-btn__label
+{
+    float: right;
+
+    vertical-align: middle;
+}
+.clearfix
+{
+    display: block;
+    clear: both;
 }
