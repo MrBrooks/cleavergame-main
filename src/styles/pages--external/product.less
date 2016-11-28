@@ -1,0 +1,58 @@
+.cg-product__more-btn{
+  text-align: center;
+  cursor: pointer;
+  div{
+    margin: auto;
+  }
+  .label{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+}
+.cg-payment-options{
+  text-align: center;
+  margin-bottom: 70px;
+  &__title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  &__quote{
+    margin-bottom: 70px;
+  }
+  &__grid{
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    justify-content: center;
+  }
+  &__option{
+    width: 220px;
+    padding: 0 10px;
+  }
+  &__image{
+    height: 90px;
+  }
+  &__image>div{
+    margin: auto;
+  }
+  &--delivery &__option{
+    width: 240px;
+  }
+  &--delivery &__price{
+    color: @blue-light;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+  &__fix-height{
+    height: 115px;
+  }
+  p{
+    margin-top: 0;
+  }
+}
