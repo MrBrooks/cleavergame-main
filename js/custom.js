@@ -11,6 +11,7 @@ $(document).ready(function() {
       navText: ['<div class="svg-sprite--arrow"></div>','<div class="svg-sprite--arrow"></div>']
     });
   var menu = new MenuBtn();
+  ScrollButton();
 });
 
 function MenuBtn(){
@@ -22,5 +23,17 @@ function MenuBtn(){
   function toggle(){
     btn.toggleClass('active');
     drop.slideToggle(300);
+  }
+}
+
+function ScrollButton(){
+  var btn = $('.cg-scroll-btn');
+  btn.on('click',onClick);
+
+  function onClick(){
+    var target = $(this).attr('data-scroll-target');
+    $('html, body').animate({
+        scrollTop: $(target).offset().top
+    }, 1000);
   }
 }
