@@ -5,6 +5,9 @@
   <li>jQuery JavaScript Library v2.1.4</li>
   <li>owl carousel 2 <a href="http://www.owlcarousel.owlgraphic.com">http://www.owlcarousel.owlgraphic.com/</a></li>
 </ol>
+<p>
+Preview: <a href="https://mrbrooks.github.io/cleavergame-main">https://mrbrooks.github.io/cleavergame-main</a>
+</p>
 
 ==============================
 update - multy-level menu v1.0
