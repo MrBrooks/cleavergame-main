@@ -5,3 +5,17 @@
   <li>jQuery JavaScript Library v2.1.4</li>
   <li>owl carousel 2 <a href="http://www.owlcarousel.owlgraphic.com">http://www.owlcarousel.owlgraphic.com/</a></li>
 </ol>
+
+==============================
+update - multy-level menu v1.0
+==============================
+Изменения:
+Переделана структура меню в html, css & js
+P.S.: теперь при инициализации меню нужно указывать параметры:
+<pre>
+var defs = {
+  selector: "#cg-menu", // селектор меню по id
+  btn: false,           // если нужна кнопка - то тут селектор кнопки
+  speed: 300            // скорость выезжания
+}
+</pre>
