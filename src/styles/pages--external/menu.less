@@ -4,7 +4,7 @@
   &--opened{
     display: block;
   }
-  ul{
+  &__level-1{
     list-style-type: none;
     margin: auto;
     padding: 0;
@@ -14,47 +14,122 @@
       clear: both;
     }
   }
-  li{
-    a{
-      display: block;
-      float: left;
-      font-size: 18px;
-      width: 100%/8;
-      background-color: @blue-light;
-      color: white;
-      text-decoration: none;
-      padding-left: 13px;
-      padding-right: 13px;
-      padding-top: 20px;
-      height: 130px;
-      box-sizing: border-box;
-      transition: all 500ms;
-      line-height: 1.2;
-      &:hover{
-        background-color: @blue-light-hover;
-      }
+  &__label-1{
+    display: block;
+    float: left;
+    font-size: 18px;
+    width: 100%/8;
+    background-color: @blue-light;
+    color: white;
+    text-decoration: none;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 20px;
+    height: 130px;
+    box-sizing: border-box;
+    transition: all 500ms;
+    line-height: 1.2;
+    cursor: pointer;
+    &:hover{
+      background-color: @blue-light-hover;
     }
-    &:nth-child(odd) a{
+    &:nth-child(odd){
       background-color: @blue-dark;
       &:hover{
         background-color: @blue-dark-hover;
       }
     }
-    &:nth-child(2n+9) a{
+    &:nth-child(2n+9){
       background-color: @blue-light;
       &:hover{
         background-color: @blue-light-hover;
       }
     }
-    &:nth-child(2n+10) a{
+    &:nth-child(2n+10){
       background-color: @blue-dark;
       &:hover{
         background-color: @blue-dark-hover;
       }
     }
   }
+  &__level-2{
+    background-color: @blue-darker;
+    color: #fff;
+    padding: 22px 13px 40px;
+    display: none;
+  }
+  &__submenu{
+    width: 100%;
+    flex-wrap: wrap;
+    display: none;
+    &.active{
+      display: inline-flex;
+    }
+  }
+  &__level-3{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  &__label-3{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__level-4{
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+  &__label-4{
+    display: block;
+
+    &:before{
+      @size: 8px;
+      content: '';
+      //position: absolute;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      left: -6px;
+      top: -1px;
+      width: @size;
+      height: @size;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+  }
+  &__level-5{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+  &__label-5{
+    display: block;
+    &:before{
+      @size: 6px;
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      left: -6px;
+      top: -1px;
+      width: @size;
+      height: @size;
+      border: 1px solid #fff;
+      border-radius: 50%;
+    }
+  }
   .cg-btn{
     width: 100%;
+  }
+}
+.cg-white{
+  color: #fff;
+  a&{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 .cg-menu-btn{
