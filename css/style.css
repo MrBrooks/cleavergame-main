@@ -164,10 +164,9 @@
 .owl-carousel .owl-grab
 {
     cursor: move;
-    cursor: -webkit-grab;
-    cursor:      -o-grab;
-    cursor:     -ms-grab;
-    cursor:         grab;
+    cursor:  -o-grab;
+    cursor: -ms-grab;
+    cursor:     grab;
 }
 .owl-carousel.owl-rtl
 {
@@ -372,7 +371,6 @@
 .cg-comments .owl-next div
 {
     -webkit-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
             transform: rotate(-90deg);
 }
 .cg-comments .owl-prev
@@ -384,7 +382,6 @@
 .cg-comments .owl-prev div
 {
     -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
             transform: rotate(90deg);
 }
 .cg-comment__img
@@ -434,17 +431,15 @@
 }
 .cg-articles__grid
 {
-    display: -webkit-inline-flex;
-    display:    -moz-inline-flex;
-    display:     -ms-inline-flex;
-    display:      -o-inline-flex;
+    display: -moz-inline-flex;
+    display:  -ms-inline-flex;
+    display:   -o-inline-flex;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display:         inline-flex;
+    display:      inline-flex;
 
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .cg-articles__grid > div
 {
@@ -580,19 +575,17 @@ a:hover > .cg-btn
 }
 .cg-person-cards__grid
 {
-    display: -webkit-inline-flex;
-    display:    -moz-inline-flex;
-    display:     -ms-inline-flex;
-    display:      -o-inline-flex;
+    display: -moz-inline-flex;
+    display:  -ms-inline-flex;
+    display:   -o-inline-flex;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display:         inline-flex;
+    display:      inline-flex;
 
     width: 100%;
 
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .cg-person-cards__grid > div
 {
@@ -639,22 +632,22 @@ a:hover > .cg-btn
 {
     display: block;
 }
-.cg-menu ul
+.cg-menu__level-1
 {
     margin: auto;
     padding: 0;
 
     list-style-type: none;
 }
-.cg-menu ul:after,
-.cg-menu ul:before
+.cg-menu__level-1:after,
+.cg-menu__level-1:before
 {
     display: block;
     clear: both;
 
     content: '';
 }
-.cg-menu li a
+.cg-menu__label-1
 {
     font-size: 18px;
     line-height: 1.2;
@@ -669,6 +662,7 @@ a:hover > .cg-btn
     padding-right: 13px;
     padding-left: 13px;
 
+    cursor: pointer;
     -webkit-transition: all 500ms;
             transition: all 500ms;
     text-decoration: none;
@@ -676,37 +670,140 @@ a:hover > .cg-btn
     color: white;
     background-color: #00afd4;
 }
-.cg-menu li a:hover
+.cg-menu__label-1:hover
 {
     background-color: #018ba8;
 }
-.cg-menu li:nth-child(odd) a
+.cg-menu__label-1:nth-child(odd)
 {
     background-color: #009ebf;
 }
-.cg-menu li:nth-child(odd) a:hover
+.cg-menu__label-1:nth-child(odd):hover
 {
     background-color: #0286a2;
 }
-.cg-menu li:nth-child(2n+9) a
+.cg-menu__label-1:nth-child(2n+9)
 {
     background-color: #00afd4;
 }
-.cg-menu li:nth-child(2n+9) a:hover
+.cg-menu__label-1:nth-child(2n+9):hover
 {
     background-color: #018ba8;
 }
-.cg-menu li:nth-child(2n+10) a
+.cg-menu__label-1:nth-child(2n+10)
 {
     background-color: #009ebf;
 }
-.cg-menu li:nth-child(2n+10) a:hover
+.cg-menu__label-1:nth-child(2n+10):hover
 {
     background-color: #0286a2;
+}
+.cg-menu__level-2
+{
+    display: none;
+
+    padding: 22px 13px 40px;
+
+    color: #fff;
+    background-color: #008daa;
+}
+.cg-menu__submenu
+{
+    display: none;
+
+    width: 100%;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.cg-menu__submenu.active
+{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+.cg-menu__level-3
+{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.cg-menu__label-3
+{
+    font-size: 16px;
+    font-weight: 700;
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+.cg-menu__level-4
+{
+    padding-top: 10px;
+    padding-left: 40px;
+}
+.cg-menu__label-4
+{
+    display: block;
+}
+.cg-menu__label-4:before
+{
+    position: relative;
+    top: -1px;
+    left: -6px;
+
+    display: inline-block;
+
+    width: 8px;
+    height: 8px;
+
+    content: '';
+    vertical-align: middle;
+
+    border-radius: 50%;
+    background-color: #fff;
+}
+.cg-menu__level-5
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.cg-menu__label-5
+{
+    display: block;
+}
+.cg-menu__label-5:before
+{
+    position: relative;
+    top: -1px;
+    left: -6px;
+
+    display: inline-block;
+
+    width: 6px;
+    height: 6px;
+
+    content: '';
+    vertical-align: middle;
+
+    border: 1px solid #fff;
+    border-radius: 50%;
 }
 .cg-menu .cg-btn
 {
     width: 100%;
+}
+.cg-white
+{
+    color: #fff;
+}
+a.cg-white
+{
+    text-decoration: none;
+}
+a.cg-white:hover
+{
+    text-decoration: underline;
 }
 .cg-menu-btn
 {
@@ -741,13 +838,11 @@ a:hover > .cg-btn
 .cg-menu-btn.active .cg-menu-btn__bars div:nth-child(1)
 {
     -webkit-transform: rotate(45deg) translateY(11px);
-        -ms-transform: rotate(45deg) translateY(11px);
             transform: rotate(45deg) translateY(11px);
 }
 .cg-menu-btn.active .cg-menu-btn__bars div:nth-child(2)
 {
     -webkit-transform: translateX(-24px);
-        -ms-transform: translateX(-24px);
             transform: translateX(-24px);
 
     opacity: 0;
@@ -755,7 +850,6 @@ a:hover > .cg-btn
 .cg-menu-btn.active .cg-menu-btn__bars div:nth-child(3)
 {
     -webkit-transform: rotate(-45deg) translateY(-11px);
-        -ms-transform: rotate(-45deg) translateY(-11px);
             transform: rotate(-45deg) translateY(-11px);
 }
 .cg-menu-btn__label
@@ -807,18 +901,16 @@ a:hover > .cg-btn
 }
 .cg-payment-options__grid
 {
-    display: -webkit-inline-flex;
-    display:    -moz-inline-flex;
-    display:     -ms-inline-flex;
-    display:      -o-inline-flex;
+    display: -moz-inline-flex;
+    display:  -ms-inline-flex;
+    display:   -o-inline-flex;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display:         inline-flex;
+    display:      inline-flex;
 
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
 }
 .cg-payment-options__option
 {

@@ -71,52 +71,14 @@
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/style.min.css" />
     <!-- PRELOADER STYLE -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" >
     <style>
-        @-webkit-keyframes pulse {
-          from {
-            -webkit-transform: scale(1);
-                    transform: scale(1);
-          }
-          to {
-            -webkit-transform: scale(1.2);
-                    transform: scale(1.2);
-          }
-        }
-        @keyframes pulse {
-          from {
-            -webkit-transform: scale(1);
-                    transform: scale(1);
-          }
-          to {
-            -webkit-transform: scale(1.2);
-                    transform: scale(1.2);
-          }
-        }
-        .preloader {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100vh;
-          text-align: center;
-          display: table;
-          z-index: 9999;
-          background-color: #fff;
-          -webkit-transition: all 1000ms;
-          transition: all 1000ms;
-          -webkit-transform-origin: center;
-                  transform-origin: center;
-          -webkit-animation: pulse 1000ms cubic-bezier(0, 0, 0.26, 0.95) infinite alternate;
-                  animation: pulse 1000ms cubic-bezier(0, 0, 0.26, 0.95) infinite alternate;
-        }
-        .preloader.uppp {
-          top: -200%;
-        }
-        .preloader > div {
-          display: table-cell;
-          vertical-align: middle;
+        body{
+            font-family: "Open Sans";
         }
     </style>
+
 </head>
 
     <body>
@@ -128,25 +90,76 @@
 
         <main>
             <h2>Menu block</h2>
-<div class="cg-menu cg-menu--opened">
-  <ul>
-    <li><a href="">Lorem ipsum dolor.</a></li>
-    <li><a href="">menu-2</a></li>
-    <li><a href="">menu-3</a></li>
-    <li><a href="">menu-4</a></li>
-    <li><a href="">menu-5</a></li>
-    <li><a href="">menu-6</a></li>
-    <li><a href="">menu-7</a></li>
-    <li><a href="">menu-8</a></li>
-    <li><a href="">menu-9</a></li>
-    <li><a href="">menu-10</a></li>
-    <li><a href="">menu-11</a></li>
-    <li><a href="">menu-12</a></li>
-    <li><a href="">menu-13</a></li>
-    <li><a href="">menu-14</a></li>
-    <li><a href="">menu-15</a></li>
-    <li><a href="">menu-16</a></li>
+<div id="cg-menu" class="cg-menu cg-menu--opened">
+  <ul class="cg-menu__level-1">
+    <li class="cg-menu__label-1" data-cg-menu-index="1">Lorem ipsum dolor.</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="2">menu-2</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="3">menu-3</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="4">menu-4</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="5">menu-5</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="6">menu-6</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="7">menu-7</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="8">menu-8</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="9">menu-9</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="10">menu-10</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="11">menu-11</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="12">menu-12</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="13">menu-13</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="14">menu-14</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="15">menu-15</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="16">menu-16</li>
   </ul>
+  <div class="cg-menu__level-2">
+    <div class="cg-menu__submenu" data-cg-submenu-index="1">
+      <div class="cg-menu__level-3">
+        <span class="cg-menu__label-3"><a class="cg-white" href="">Lorem ipsum dolor. L3</a></span>
+        <div class="cg-menu__level-4">
+          <span class="cg-menu__label-4"><a class="cg-white" href="">Lorem ipsum dolor. L4</a></span>
+          <div class="cg-menu__level-5">
+            <span class="cg-menu__label-5"><a class="cg-white" href="">Lorem ipsum dolor. L5</a></span>
+            <span class="cg-menu__label-5"><a class="cg-white" href="">Lorem ipsum dolor. L5</a></span>
+            <span class="cg-menu__label-5"><a class="cg-white" href="">Lorem ipsum dolor. L5</a></span>
+            <span class="cg-menu__label-5"><a class="cg-white" href="">Lorem ipsum dolor. L5</a></span>
+          </div>
+          <span class="cg-menu__label-4"><a class="cg-white" href="">Lorem ipsum dolor. L4</a></span>
+          <span class="cg-menu__label-4"><a class="cg-white" href="">Lorem ipsum dolor. L4</a></span>
+        </div>
+      </div>
+      <div class="cg-menu__level-3">
+        <span class="cg-menu__label-3"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+        <div class="cg-menu__level-4">
+          <span class="cg-menu__label-4"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+          <div class="cg-menu__level-5">
+            <span class="cg-menu__label-5"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="cg-menu__level-3">
+        <span class="cg-menu__label-3"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+      </div>
+      <div class="cg-menu__level-3">
+        <span class="cg-menu__label-3"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+      </div>
+      <div class="cg-menu__level-3">
+        <span class="cg-menu__label-3"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+      </div>
+    </div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="2"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="3"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="4"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="5"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="6"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="7"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="8"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="9"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="10"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="11"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="12"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="13"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="14"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="15"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="16"></div>
+  </div>
 </div>
 <h2>Menu button block</h2>
 <div id="cg-menu-btn" class="cg-menu-btn">
@@ -157,25 +170,68 @@
   </div>
   <div class="cg-menu-btn__label">ВСЕ ИГРЫ ДЛЯ ГЕНИЕВ</div>
 </div>
-<div id="cg-menu" class="cg-menu">
-  <ul>
-    <li><a href="">Lorem ipsum dolor.</a></li>
-    <li><a href="">menu-2</a></li>
-    <li><a href="">menu-3</a></li>
-    <li><a href="">menu-4</a></li>
-    <li><a href="">menu-5</a></li>
-    <li><a href="">menu-6</a></li>
-    <li><a href="">menu-7</a></li>
-    <li><a href="">menu-8</a></li>
-    <li><a href="">menu-9</a></li>
-    <li><a href="">menu-10</a></li>
-    <li><a href="">menu-11</a></li>
-    <li><a href="">menu-12</a></li>
-    <li><a href="">menu-13</a></li>
-    <li><a href="">menu-14</a></li>
-    <li><a href="">menu-15</a></li>
-    <li><a href="">menu-16</a></li>
+<div id="cg-menu-with-btn" class="cg-menu">
+  <ul class="cg-menu__level-1">
+    <li class="cg-menu__label-1" data-cg-menu-index="1">Lorem ipsum dolor.</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="2">menu-2</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="3">menu-3</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="4">menu-4</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="5">menu-5</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="6">menu-6</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="7">menu-7</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="8">menu-8</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="9">menu-9</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="10">menu-10</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="11">menu-11</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="12">menu-12</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="13">menu-13</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="14">menu-14</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="15">menu-15</li>
+    <li class="cg-menu__label-1" data-cg-menu-index="16">menu-16</li>
   </ul>
+  <div class="cg-menu__level-2">
+    <div class="cg-menu__submenu" data-cg-submenu-index="1">
+      <div class="cg-menu__level-3">
+        <span class="cg-menu__label-3"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+        <div class="cg-menu__level-4">
+          <span class="cg-menu__label-4"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+          <div class="cg-menu__level-5">
+            <span class="cg-menu__label-5"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="cg-menu__level-3">
+        <span class="cg-menu__label-3"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+        <div class="cg-menu__level-4">
+          <span class="cg-menu__label-4"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+          <div class="cg-menu__level-5">
+            <span class="cg-menu__label-5"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="cg-menu__level-3">
+        <span class="cg-menu__label-3"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+      </div>
+      <div class="cg-menu__level-3">
+        <span class="cg-menu__label-3"><a class="cg-white" href="">Lorem ipsum dolor.</a></span>
+      </div>
+    </div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="2"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="3"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="4"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="5"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="6"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="7"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="8"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="9"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="10"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="11"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="12"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="13"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="14"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="15"></div>
+    <div class="cg-menu__submenu" data-cg-submenu-index="16"></div>
+  </div>
   <a href=""><button class="cg-btn cg-btn--red">Все игрушки</button></a>
 </div>
 <div class="clearfix"></div>
