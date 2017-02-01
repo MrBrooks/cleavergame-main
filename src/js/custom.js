@@ -32,12 +32,14 @@ function Menu(config){
   var menu = $(opts.selector);
   var level1_btn = menu.find(".cg-menu__label-1"),
       wrapper = menu.find(".cg-menu__level-2"),
-      submenus = menu.find(".cg-menu__submenu");
+      submenus = menu.find(".cg-menu__submenu"),
+      close = menu.find(".cg-menu__close-btn");
 
   if(opts.btn){
     $(opts.btn).on('click',toggle);
   }
   level1_btn.on('click',showSubmenu);
+  close.on('click',closeSubmenu);
 
   function toggle(){
     $(this).toggleClass('active');
@@ -60,6 +62,10 @@ function Menu(config){
       wrapper.slideUp(opts.speed);
       current = 0;
     }
+  }
+  function closeSubmenu(){
+    wrapper.slideUp(opts.speed);
+    current = 0;
   }
 }
 
